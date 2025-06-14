@@ -3,7 +3,7 @@ from schemas.paciente_schema import PacienteCreate, Paciente
 from services.paciente_service import PacienteService
 from database import get_db  # Ahora esta importación funcionará
 
-router = APIRouter()
+router = APIRouter(prefix="/api/paciente", tags=["paciente"])
 
 @router.post("/pacientes/", response_model=Paciente)
 def crear_paciente(paciente: PacienteCreate, db = Depends(get_db)):

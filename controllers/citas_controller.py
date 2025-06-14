@@ -4,7 +4,7 @@ from services.cita_service import CitaService
 from database import get_db
 from typing import List
 
-router = APIRouter()
+router = APIRouter(prefix="/api/citas", tags=["citas"])
 
 @router.post("/citas/", response_model=Cita)
 def crear_cita(cita: CitaCreate, db=Depends(get_db)):

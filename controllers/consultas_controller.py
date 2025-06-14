@@ -3,7 +3,7 @@ from schemas.consulta_schema import ConsultaCreate, Consulta
 from services.consulta_service import ConsultaService
 from database import get_db
 
-router = APIRouter()
+router = APIRouter(prefix="/api/consultas", tags=["consultas"])
 
 @router.post("/consultas/", response_model=Consulta)
 def registrar_consulta(consulta: ConsultaCreate, db=Depends(get_db)):

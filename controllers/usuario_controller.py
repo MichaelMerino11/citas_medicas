@@ -3,7 +3,7 @@ from schemas.usuario_schema import UsuarioCreate, Usuario
 from services.usuario_service import UsuarioService
 from database import get_db
 
-router = APIRouter()
+router = APIRouter(prefix="/api/usuario", tags=["usuario"])
 
 @router.post("/usuarios/", response_model=Usuario)
 def crear_usuario(usuario: UsuarioCreate, db = Depends(get_db)):
