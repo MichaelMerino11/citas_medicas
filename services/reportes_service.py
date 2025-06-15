@@ -30,7 +30,7 @@ class ReportesService:
     def historia_clinica(self, paciente_id: str) -> List[ConsultaOut]:
         return self.db.query(Consulta)\
             .filter(Consulta.paciente_id == paciente_id)\
-            .order_by(Consulta.created_at.desc())\
+            .order_by(Consulta.fecha.desc())\
             .all()
     
     def resumen_comprobantes(self, fecha_inicio: date, fecha_fin: date) -> Dict:
