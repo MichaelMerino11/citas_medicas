@@ -1,0 +1,102 @@
+# Entorno virtual
+venv/
+.env/
+.venv/
+env/
+
+# Archivos de entorno
+.env
+.env.local
+.env.*
+!.env.example
+
+# Base de datos SQLite
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE/Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+tests/.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Archivos generados por el sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de compilación
+*.mo
+*.pot
+
+# Documentación
+docs/_build/
+
+# Archivos de desarrollo local
+local_settings.py
+instance/
+
+# Packer
+packer_variables.json
+
+# macOS
+.DS_Store
+
+# Archivos de cobertura
+.coverage
+htmlcov/
+
+# Pytest cache
+__pycache__/
+*.py[cod]
+.cache/
+pytest_cache/
+
+# Archivos de log
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
